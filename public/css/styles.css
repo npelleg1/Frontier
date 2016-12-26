@@ -1,0 +1,135 @@
+body{
+    font-family: 'roboto slab', sans-serif;
+    text-align: center;
+    position: absolute;
+    padding:0;
+    margin:0;
+    width:100%;
+}
+
+.first_image
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    max-width:500px;
+}
+a:active,a:hover,a {
+    text-transform:uppercase;
+    font-family:'lato', sans-serif;
+    font-weight:300;
+    text-decoration:none;
+    color:#5ec7d1;
+}
+
+a:hover{
+    color:#444444;
+}
+
+.buttonclass
+{
+    background-color: #5ec7d1;
+    color: white;
+    font-family: 'lato', sans-serif;
+    padding: 10px 4px;
+    text-align: center;
+    letter-spacing:2px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin-top:5px;
+    width: 100px;
+    border: 0;
+}
+
+.buttonclass:hover
+{
+    border-bottom:2px solid #5ec7d1;
+    color: white;
+    background-color:#aaaaaa;
+}
+
+#home{
+    background-color:white;
+    color:#666666;
+    padding:60px;
+    padding-left:100px;
+    padding-right:100px;
+}
+
+#services,#testimonials {
+    text-align:right;
+    background-color:#444444;
+    opacity:.9;
+    color:#ffffff;
+    padding:60px;
+    padding-left:100px;
+    padding-right:100px;
+}
+
+#about, #faq, #subscribe,#contact {
+    background-color:white;
+    color:#666666;
+    opacity:.9;
+    text-align:left;
+    padding:60px;
+    padding-left:100px;
+    padding-right:100px;
+}
+
+#contact{
+    text-align:center;
+    opacity:1.0;
+}
+
+h1{
+    color:#5ec7d1;
+    font-size:28pt;
+    text-transform:uppercase;
+    font-family:'lato', sans-serif;
+    letter-spacing:-1px;
+    margin-top:10px;
+}
+
+h2{
+    text-transform:lowercase;
+    font-family:'lato', sans-serif;
+}
+
+h3{
+    text-transform:uppercase;
+    font-family:'lato', sans-serif;
+    color:#666666;
+    letter-spacing:1px;
+    font-weight:300;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+#buttonBox{
+    text-align:center;
+    padding-top:20px;}
+
+@media screen and (min-width: 414px) and (min-height: 738px){
+    body{
+        background-image: url(../images/dna.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+        display: block;
+    }
+}
+
+@media (max-width: 413px){
+    #services, #testimonials, #about, #faq, #subscribe, #contact{
+        text-align: center;
+        padding:30px;
+        padding-left:50px;
+        padding-right:50px;
+    }
+}

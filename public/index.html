@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Frontier Genetix</title>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js'></script>
+    <script>
+        $(function() {
+            $('a[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDSjzjzKKi1lmioY7VWYraZbs9pgfHQifs",
+            authDomain: "frontier-genetix.firebaseapp.com",
+            databaseURL: "https://frontiergenetix.firebaseio.com",
+            storageBucket: "frontier-genetix.appspot.com"
+        };
+        firebase.initializeApp(config);
+        var database = firebase.database();
+    </script>
+    <script src="scripts/submit.js"></script>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+<body>
+    <div id="home" class="contentClass">
+        <img class="first_image" src="images/frontierlogo.png">
+        <a href="#about" class="buttonclass">ABOUT</a>
+        <a href="#services" class="buttonclass">SERVICES</a>
+        <a href="#faq" class="buttonclass">FAQ</a>
+        <a href="#testimonials" class="buttonclass">TESTIMONIALS</a>
+        <a href="#subscribe" class="buttonclass">SUBSCRIBE</a>
+        <a href="#contact" class="buttonclass">CONTACT</a>
+    </div>
+    <div id="about" class="contentClass">
+        <h1>ABOUT FRONTIER</h1>
+        <p>  Be the best version of you, that you can be</p>
+        <p>  Our patent-pending Frontier algorithm makes this easy to understand </p>
+        <p>  Stop relying on prescription pills and potentially harmful drugs  </p>
+        <p> And start finding answers in the information your body has already given to you</p>
+        <p> 
+            And it's completely safe! Adding vitamins and minerals to our diet is something humans
+            have been doing for thousands of years. Our job is simply to upgrade the process.
+      </p>
+        <p>  Your DNA... </p>
+        <p> ...is now in your hands  </p>
+        <div id="buttonBox">
+            <a href="#home" class="buttonclass">TOP</a>
+            <a href="#services" class="buttonclass">NEXT</a>
+        </div>
+    </div>
+    <div id="services" class="contentClass">
+        <h1>SERVICES</h1>
+        <h2>We are committed to quality</h2>
+        <p>
+            The reason Frontier Genetix was founded was to help people find answers to their suffering.
+            The only way to do that is a commitment to a standard of excellence in what we do, and hearing
+            about your experiences to always be improving. This is the Frontier Mission, and you can trust
+            us to uphold it.
+        </p>
+        <h2>You don't need to be a biochemist. We've got you covered!</h2>
+        <p>
+            With years of practical, clinical experience in nutrigenomics, and a team of highly skilled researchers,
+            you don't have to look up a thing.
+        </p>
+        <h2>Every SNP that the NIH knows about, you know about </h2>
+        <p>
+            Our databases are directly linked to dbSNP, the most extensive SNP database maintained by the NIH,
+            to give you the most reliable information out there.
+        </p>
+        <h2> Comprehensive and Extensive Options for pathway analysis </h2>
+        <p>
+            We make sure to give you the most comprehensive analysis of how your body works, and how it can work
+            even better. Choose as many health reports as you like, including two free if you sign up here.
+            You won't find a better deal!
+        </p>
+        <h2>Share your new knowledge with friends and family (or just keep those secrets to yourself)</h2>
+        <p>
+            With our friends and family discount, it's easier than ever to get friends and family
+            to join the future of healthcare. Feel free to join or create a Frontier Community, where
+            you can share insights or new knowledge with your loved ones, and even get a glimpse
+            into their own profiles.
+        </p>
+        <h2>Feel like getting scientific?</h2>
+        <p>
+            Follow any of our provided links to find the mechanism for how we operate, more
+            information on specific SNPs and disorders, and why Frontier Genetix is uniquely
+            positioned to be the best genetic analysis team out there.
+        </p>
+        <h2>We're always here for you</h2>
+        <p>
+            If you ever need something from us, we're available at the click of a button.
+            We value our doctor's time, and we hope you do too. They are committed to bringing
+            a higher standard of healthcare to the world, and this is why they have joined our
+            team. Email us at
+            <strong><a href="mailto:info@frontiergenetix.com" class="email">info@frontiergenetix.com</a></strong>
+            and we'll do our best to get back to you as soon as possible.
+        </p>
+        <div id="buttonBox">
+            <a href="#home" class="buttonclass">TOP</a>
+            <a href="#faq" class="buttonclass">NEXT</a>
+        </div>
+    </div>
+    <div id="faq" class="contentClass">
+        <h1>FAQ</h1>
+        <h3>
+            Will I need to go to my doctor to be prescribed the right supplements when I get my results?
+        </h3>
+        <p>
+            No, although we always recommend checking in with your doctor if you feel like something
+            isn't right. Our Optimization Profiles only contain supplements that are found naturally,
+            and can be bought over-the-counter.
+        </p>
+        <h3>
+            How long does it take for my reports to come back?
+        </h3>
+        <p>
+            Thanks to our amazing code team, we have produced an efficient algorithm that can read
+            through your pages of raw data and produce detailed Optimization Profiles in minutes!
+            Just upload your raw data, grab a snack, and come back to watch the most fundamental
+            aspects of your being revealed to you. It's quite the show.
+        </p>
+        <h3>
+            Will I experience any side effects from taking the supplements in the Optimization Profiles?
+        </h3>
+        <p>
+            There is as much risk of a side effect from those supplements as there is from taking
+            a vitamin in the morning. Essentially, they are one and the same concept. But again,
+            if by any chance you do starting feeling off, do not hesitate to visit your physician,
+            and reach out to one of the physicians on our experience team to help you sort it out.
+        </p>
+        <h3>
+            Do you keep my raw data report on file once it has been analyzed?
+        </h3>
+        <p>
+            Absolutely not. We value your privacy and would never take the risk of that information being
+            in places you don't want it. As soon as it is analyzed and the Optimization Profiles are created,
+            we erase the file from our databases.
+        </p>
+        <h3> Still have questions? </h3>
+        <p>
+            Shoot us an email at
+            <strong><a href="mailto:info@frontiergenetix.com" class="email">info@frontiergenetix.com</a></strong>
+            and subscribe to our mailer!It's completely free, and we will put out lots of exciting information,
+            like special offers, cool stories and articles, featured SNPs of the week,
+            and more. Find the subscription box below. We look forward to hearing from you!
+        </p>
+        <div id="buttonBox">
+            <a href="#home" class="buttonclass">TOP</a>
+            <a href="#testimonials" class="buttonclass">NEXT</a>
+        </div>
+    </div>
+    <div id="testimonials" class="contentClass">
+        <h1>TESTIMONIALS</h1>
+        <h2>Sound too good to be true? Take it from the many patients we have already helped.</h2>
+        <div id="buttonBox">
+            <a href="#home" class="buttonclass">TOP</a>
+            <a href="#subscribe" class="buttonclass">NEXT</a>
+        </div>
+    </div>
+    <div id="subscribe" class="contentClass" style="text-align:center;">
+        <h1>SUBSCRIBE</h1>
+        <form method="post">
+            <p>
+                <label for="nameid">Name:<em>*</em></label>
+                <input type="text" name="name" id="nameid" placeholder="Full Name" required>
+            </p>
+            <p>
+                <label for="emailid">Email:<em>*</em></label>
+                <input type="email" name="email" id="emailid" placeholder="example@yourdomain.com" required>
+            </p>
+            <p>
+                <input type="submit" value="SUBMIT" onclick="sendMessage()" class="buttonclass"/>
+            </p>
+        </form>
+        <a href="#home" class="buttonclass">TOP</a>
+        <a href="#contact" class="buttonclass">NEXT</a>
+    </div>
+    <div id="contact" class="contentClass">
+        <img class="first_image" src="images/newfrontier2-01.png">
+        <p>
+            <strong><a href="mailto:info@frontiergenetix.com" class="email">info@frontiergenetix.com</a></strong>
+        </p>
+        <a href="#home" class="buttonclass">TOP</a>
+    </div>
+</body>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+</html>
